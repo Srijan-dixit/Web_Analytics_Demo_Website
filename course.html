@@ -62,6 +62,39 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 ]
             });
         });
+	    
+	
+	// Measures product impressions and also tracks a standard
+	// pageview for the tag configuration.
+	// Product impressions are sent by pushing an impressions object
+	// containing one or more impressionFieldObjects.
+	dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+	dataLayer.push({
+	  'ecommerce': {
+	    'currencyCode': 'EUR',                       // Local currency is optional.
+	    'impressions': [
+	     {
+	       'name': 'The Complete Python Course',       // Name or ID is required.
+	       'id': '12345',
+	       'price': '15.25',
+	       'brand': 'Google',
+	       'category': 'Apparel',
+	       'variant': 'Python',
+	       'list': 'Search Results',
+	       'position': 1
+	     },
+	     {
+	       'name': 'Web Analytics Online Training',
+	       'id': '67890',
+	       'price': '33.75',
+	       'brand': 'Google',
+	       'category': 'Apparel',
+	       'variant': 'Web Analytics',
+	       'list': 'Search Results',
+	       'position': 2
+	     }]
+	  }
+	});
     </script>
 
     <title>Contact Page</title>
