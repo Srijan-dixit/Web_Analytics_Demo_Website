@@ -61,6 +61,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 ]
             });
         });
+	    
+	    dataLayer.push({ecommerce:null});
+	    dataLayer.push({ecommerce:{
+	    				transaction_id:12345,
+	    				affiliation:'Courses',
+	    				value:200,
+	    				tax: 50,
+	    				currency:'INR',
+	    				items:[{
+						item_id:1,
+						item_name:'Python',
+						price: 200,
+						category1 : 'MOOC',
+						category2: 'Technical'},
+					       {
+						item_id:2,
+						item_name:'Web Analytics',
+						price: 500,
+						category1 : 'MOOC',
+						category2: 'Business'}]}});
     </script>
 
     <title>Cart Page</title>
@@ -104,7 +124,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 &emsp;  &emsp;  &emsp;  &emsp; &emsp;   <h1>&emsp;  &emsp;  &emsp;  &emsp; &emsp;Item Added to Cart</h1></br>
 
-&emsp;  &emsp;  &emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;  &emsp; &emsp; &emsp;  &emsp;  &emsp;  &emsp; &emsp; <button type="button" style="font: bold 24px  Arial; color:green;"><a href="sucess.html"> Purchase</a></button><br />
+&emsp;  &emsp;  &emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;  &emsp; &emsp; &emsp;  &emsp;  &emsp;  &emsp; &emsp; <button type="button" style="font: bold 24px  Arial; color:green;"><a onclick="dataLayer.push({event:'purchase'});" href="sucess.html"> Purchase</a></button><br />
 </body>
 
 </html>
