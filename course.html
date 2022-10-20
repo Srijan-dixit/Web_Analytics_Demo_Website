@@ -68,40 +68,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	// pageview for the tag configuration.
 	// Product impressions are sent by pushing an impressions object
 	// containing one or more impressionFieldObjects.
-	dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
-	dataLayer.push({
-	   event : 'view_item_list',
-	  'ecommerce': {
-	    'currencyCode': 'INR',                       // Local currency is optional.
-	    'impressions': [
-	     {
-	       'name': 'The Complete Python Course',       // Name or ID is required.
-	       'id': '12345',
-	       'price': '15.25',
-	       'brand': 'Google',
-	       'category': 'Apparel',
-	       'variant': 'Python',
-	       'list': 'Search Results',
-	       'position': 1
-	     },
-	     {
-	       'name': 'Python',
-	       'id': 'ITM_12345',
-	       'affiliation': "online_Course",
-	       'price': 5000,
-	       'brand': 'MOOC',
-	       'category': 'Python',
-	       'category2': "ML",
-               'category3': "DS",
-               'category4': "CS",
-	       'variant': 'Online',
-	       'position': 2,
-	       'location_id': "ChIJIQBpAG2ahYAR_6128GcTUEo",
-	       'discount' : 100,
-	       'quantity': 1
-	     }]
-	  }
-	});
+	
     </script>
 
     <title>All Courses Page</title>
