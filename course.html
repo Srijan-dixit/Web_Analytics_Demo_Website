@@ -80,6 +80,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					item_id:2,
 					item_name:'WA Course',
 					price: 500}]}});
+	    
+	 
+	dataLayer.push({ecommerce:null});
+	dataLayer.push({event:'purchase',
+			ecommerce:{
+				items:[{
+					item_id: 'OOAAA',
+					item_name:'Shoes',
+					affiliation: 'AAA',
+					currency: 'USD',
+					discount: '0.5'
+					item_brand: 'Sparx',
+					item_category: 'Sneakers',
+					item_category2: 'Shoes',
+					item_variant: 'Shoes',
+					location_id: '10',
+					price: 15,
+					quantity: 20},
+				       {
+					item_id:2,
+					item_name:'WA Course',
+					price: 500}]}});
 					       
 	
     </script>
@@ -128,14 +150,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </p>
 
 &emsp;  &emsp;  &emsp;  &emsp;  <button id="btncart1"><a onclick="dataLayer.push({'event': 'add_to_cart'});" id="btncart1" href="cart.html" style="font: bold 24px Arial; color:red;">Add-to-cart</a></button> &emsp;  &emsp;  			 
-<button type="button" style="font: bold 24px  Arial; color:green;"><a id ="purchase1" href="sucess.html">Purchase</a></button><br />
+<button type="button" style="font: bold 24px  Arial; color:green;"><a id ="purchase1" onclick="dataLayer.push({'event': 'purchase'});" href="sucess.html">Purchase</a></button><br />
 </br></br>
 <p>
 &emsp;  &emsp;  <img src="img/2.jfif" width="500" height="200">
 </p>
 
 &emsp;  &emsp;  &emsp;  &emsp;  <button id="btncart2"><a id="btncart2" onclick="dataLayer.push({'event': 'add_to_cart'});" href="cart.html" style="font: bold 24px Arial; color:red;">Add-to-cart</a></button> &emsp;  &emsp;  			 
-<button type="button" style="font: bold 24px  Arial; color:green;"><a id="purchase" href="sucess.html">Purchase</a></button><br />
+<button type="button" style="font: bold 24px  Arial; color:green;"><a id="purchase" onclick="dataLayer.push({'event': 'purchase'});" href="sucess.html">Purchase</a></button><br />
 
 </body>
 
